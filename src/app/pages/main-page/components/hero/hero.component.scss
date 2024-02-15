@@ -54,6 +54,14 @@
           position: absolute; /* Позиционирование абсолютно */
           bottom: 20px; /* Положение снизу */
           right: 20px; /* Положение справа */
+          filter: drop-shadow(rgba(0, 0, 0, 0) 5px);
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            transform: rotate(-90deg);
+            filter: drop-shadow(rgba(0, 0, 0, 1) 5px);
+            cursor: pointer;
+          }
         }
       }
     }
@@ -93,6 +101,15 @@
           position: absolute; /* Позиционирование абсолютно */
           bottom: 20px; /* Положение снизу */
           right: 20px; /* Положение справа */
+          filter: drop-shadow(rgba(0, 0, 0, 0) 5px);
+          transition: all 0.3s ease-in-out;
+          transform: translateX(-5px);
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            transform: translateX(5px);
+            filter: drop-shadow(rgba(0, 0, 0, 1) 5px);
+            cursor: pointer;
+          }
         }
       }
     }

@@ -1,0 +1,119 @@
+.arrow {
+  position: relative;
+  height: 1px;
+  background-color: rgb(6, 153, 184);
+  width: 100%;
+  max-width: 650px;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: -10px; /* Расстояние от правого края */
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent; /* Верхняя граница */
+  border-bottom: 4px solid transparent; /* Нижняя граница */
+  border-left: 10px solid rgb(6, 153, 184); /* Левая граница */
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* Расстояние от нижнего края */
+  right: -8px; /* Расстояние от правого края */
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent; /* Верхняя граница */
+  border-bottom: 2px solid transparent; /* Нижняя граница */
+  border-left: 8px solid rgb(6, 153, 184); /* Левая граница */
+}
+
+.benefits__wrapper {
+  width: 100%;
+  max-width: 1328px;
+  margin: 0 auto;
+  & .benefits__title {
+    color: rgb(41, 44, 54);
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    & .title-dot {
+      background-color: rgb(6, 153, 184);
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+    }
+  }
+  & .benefits {
+    & .benefits__row-1 {
+      display: flex;
+      gap: 30px;
+      & .benefits__item {
+        flex: 1;
+        & .benefits__item-title {
+          margin-bottom: 10px;
+          color: rgb(41, 44, 54);
+          font-family: Raleway;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 21px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        & .arrow {
+        }
+        & .benefits__item-text {
+          color: rgb(41, 44, 54);
+          font-family: Raleway;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: 0%;
+          text-align: left;
+          margin-top: 20px;
+        }
+      }
+    }
+    & .benefits__row-2 {
+      display: flex;
+      gap: 30px;
+      & .benefits__item {
+        flex: 1;
+        & .benefits__item-title {
+          margin-bottom: 10px;
+          color: rgb(41, 44, 54);
+          font-family: Raleway;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 21px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        & .arrow {
+        }
+        & .benefits__item-text {
+          color: rgb(41, 44, 54);
+          font-family: Raleway;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: 0%;
+          text-align: left;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -11,6 +11,7 @@ import { ServicesComponent } from './pages/main-page/components/services/service
 import { DocumentsComponent } from './pages/main-page/components/documents/documents.component';
 import { FooterComponent } from './pages/main-page/components/footer/footer.component';
 import { MenubarModule } from 'primeng/menubar';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { MenubarModule } from 'primeng/menubar';
     DocumentsComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MenubarModule],
+  imports: [BrowserModule, AppRoutingModule, MenubarModule, TabViewModule],
   providers: [],
   bootstrap: [AppComponent],
 })

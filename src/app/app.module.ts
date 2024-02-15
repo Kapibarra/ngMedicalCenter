@@ -10,6 +10,7 @@ import { BenefitsComponent } from './pages/main-page/components/benefits/benefit
 import { ServicesComponent } from './pages/main-page/components/services/services.component';
 import { DocumentsComponent } from './pages/main-page/components/documents/documents.component';
 import { FooterComponent } from './pages/main-page/components/footer/footer.component';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,10 @@ import { FooterComponent } from './pages/main-page/components/footer/footer.comp
     BenefitsComponent,
     ServicesComponent,
     DocumentsComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, MenubarModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

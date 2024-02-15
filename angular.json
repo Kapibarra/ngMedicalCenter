@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngMedicalCenter:build:production"
+              "buildTarget": "ngMedicalCenter:build:production"
             },
             "development": {
-              "browserTarget": "ngMedicalCenter:build:development"
+              "buildTarget": "ngMedicalCenter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngMedicalCenter:build"
+            "buildTarget": "ngMedicalCenter:build"
           }
         },
         "test": {

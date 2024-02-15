@@ -1,0 +1,100 @@
+.hero__wrapper {
+  width: 100%;
+  max-width: 1880px;
+  background-image: url("../../../../../assets/imgs/main-bg.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background-repeat: no-repeat;
+  .hero {
+    display: flex;
+    width: 100%;
+    max-width: 1328px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 400px;
+    padding-bottom: 30px;
+    & .hero__main-banner {
+      box-sizing: border-box;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      backdrop-filter: blur(3.1px);
+      background: rgb(244, 244, 244);
+      border: 1px solid #e5e7eb;
+      width: 100%;
+      max-width: 800px;
+      position: relative;
+      & .hero__main-title {
+        color: rgb(41, 44, 54);
+        font-family: Raleway;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 47px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-bottom: 90px;
+        max-width: 600px;
+      }
+
+      & .hero__main-subtitle {
+        color: rgb(41, 44, 54);
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+        img {
+          position: absolute; /* Позиционирование абсолютно */
+          bottom: 20px; /* Положение снизу */
+          right: 20px; /* Положение справа */
+        }
+      }
+    }
+
+    & .hero__secondary-banner {
+      border-radius: 20px;
+      background: rgb(6, 153, 184);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      width: 100%;
+      border: 1px solid #e5e7eb;
+      max-width: 490px;
+      position: relative;
+      & .hero__secondary-title {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 47px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-bottom: 90px;
+      }
+
+      & .hero__secondary-subtitle {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+        img {
+          position: absolute; /* Позиционирование абсолютно */
+          bottom: 20px; /* Положение снизу */
+          right: 20px; /* Положение справа */
+        }
+      }
+    }
+  }
+}

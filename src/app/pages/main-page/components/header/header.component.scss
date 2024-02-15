@@ -1,9 +1,11 @@
 .header__wrapper {
+  margin-bottom: 20px;
   .header {
     width: 100%;
     max-width: 1328px;
     margin: 0 auto;
     margin-top: 20px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -100,20 +102,6 @@
     // border-top: 1px solid rgb(227, 241, 218);
     // border-bottom: 1px solid rgb(227, 241, 218);
     margin-top: 20px;
-    .header__nav-item {
-      padding: 10px;
-      color: rgb(0, 0, 0);
-      font-family: Nunito;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0%;
-      text-align: left;
-      text-transform: uppercase;
-      cursor: pointer;
-      &:hover {
-      }
-    }
   }
 }
 

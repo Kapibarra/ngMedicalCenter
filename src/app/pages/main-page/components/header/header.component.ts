@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Услуги',
+        icon: 'pi pi-fw pi-wallet',
         items: [
           {
             label: 'ЭЭГ',

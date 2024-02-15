@@ -1,0 +1,131 @@
+.header__wrapper {
+  .header {
+    width: 100%;
+    max-width: 1328px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .header__logo {
+      // стили для логотипа
+    }
+
+    .header__address-wrapper {
+      // стили для обертки адреса
+
+      .header__address-title {
+        color: rgb(37, 99, 235);
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0%;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header__address-item {
+        color: rgb(71, 69, 81);
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 100%;
+        max-width: 190px;
+      }
+    }
+
+    .header__time-wrapper {
+      // стили для обертки времени работы
+
+      .header__time-title {
+        color: rgb(37, 99, 235);
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0%;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header__time-item {
+        color: rgb(71, 69, 81);
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 100%;
+        max-width: 190px;
+      }
+    }
+
+    .header__phone-wrapper {
+      // стили для обертки телефонов
+
+      .header__phone-item {
+        color: rgb(6, 16, 40);
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+  .header__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    max-width: 1328px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(227, 241, 218);
+    border-bottom: 1px solid rgb(227, 241, 218);
+    margin-top: 20px;
+    .header__nav-item {
+      padding: 10px;
+      color: rgb(0, 0, 0);
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0%;
+      text-align: left;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Медиа-запросы
+@media screen and (max-width: 768px) {
+  .header__wrapper {
+    // стили для обертки header на устройствах с шириной до 768px
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__wrapper {
+    // стили для обертки header на устройствах с шириной до 576px
+  }
+}

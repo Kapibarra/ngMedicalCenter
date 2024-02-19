@@ -12,6 +12,12 @@ import { DocumentsComponent } from './pages/main-page/components/documents/docum
 import { FooterComponent } from './pages/main-page/components/footer/footer.component';
 import { MenubarModule } from 'primeng/menubar';
 import { TabViewModule } from 'primeng/tabview';
+import { ContactsPageComponent } from './pages/contacts-page/contacts-page.component';
+import { ContactsComponent } from './pages/main-page/components/contacts/contacts.component';
+import { InfoComponent } from './pages/main-page/components/info/info.component';
+import { AccordionModule } from 'primeng/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -23,8 +29,19 @@ import { TabViewModule } from 'primeng/tabview';
     ServicesComponent,
     DocumentsComponent,
     FooterComponent,
+    ContactsPageComponent,
+    ContactsComponent,
+    InfoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MenubarModule, TabViewModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MenubarModule,
+    TabViewModule,
+    AccordionModule,
+    BrowserAnimationsModule,
+    CardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

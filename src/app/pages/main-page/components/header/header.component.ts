@@ -19,45 +19,90 @@ export class HeaderComponent implements OnInit {
         icon: 'pi pi-fw pi-wallet',
         items: [
           {
-            label: 'ЭЭГ',
+            label: 'Терапия и экспертиза временной недееспособности',
             routerLink: '/',
           },
           {
-            label: 'Электро кардиография',
+            label: 'Гинекология и ведение беременности',
             routerLink: '/',
           },
           {
-            label: 'Рентгенография',
+            label: 'Функциональная диагностика',
+            routerLink: '/',
+          },
+          {
+            label: 'Ультразвуковые исследования',
+            routerLink: '/',
+          },
+          {
+            label: 'Рентгенология',
+            routerLink: '/',
+          },
+          {
+            label: 'Медицинские справки, выписки заключение',
+            routerLink: '/',
+          },
+          {
+            label: 'Профосмотры и личные медицинские книжки',
+            routerLink: '/',
+          },
+          {
+            label: 'Лабораторная диагностика',
             routerLink: '/',
           },
         ],
       },
       {
         label: 'Анализы',
+        icon: 'pi pi-fw pi-chart-bar',
         items: [
           {
-            label: 'Анализ крови',
+            label: 'Общеклинические анализы',
             routerLink: '/',
           },
           {
-            label: 'Анализ мочи',
+            label: 'Биохимия крови',
             routerLink: '/',
           },
-          // Добавьте здесь другие анализы
+          {
+            label: 'Гормоны',
+            routerLink: '/',
+          },
+          {
+            label: 'Онкомаркеры',
+            routerLink: '/',
+          },
+          {
+            label: 'Иммунологические исследования',
+            routerLink: '/',
+          },
+          {
+            label: 'Микробиологические анализы',
+            routerLink: '/',
+          },
         ],
       },
       {
-        label: 'Профосмотры',
+        label: 'Профосмотры и личные медицинские книжки',
+        icon: 'pi pi-fw pi-user',
         items: [
           {
-            label: 'Детский профосмотр',
-            routerLink: '/services/child-checkup',
-          },
-          {
-            label: 'Взрослый профосмотр',
+            label: 'Профилактический медицинский осмотр',
             routerLink: '/',
           },
-          // Добавьте здесь другие профосмотры
+          {
+            label: 'Дополнительные профилактические исследования',
+            routerLink: '/',
+          },
+          {
+            label: 'Медицинские осмотры для учебы и работы',
+            routerLink: '/',
+          },
+          {
+            label:
+              'Медицинская справка для получения или замены водительского удостоверения',
+            routerLink: '/',
+          },
         ],
       },
       {
@@ -70,7 +115,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Контакты',
-        routerLink: '/',
+        routerLink: '/contacts',
       },
     ];
   }

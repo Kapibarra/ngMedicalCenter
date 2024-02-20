@@ -21,6 +21,7 @@ import { CardModule } from 'primeng/card';
 import { AboutComponent } from './pages/main-page/components/about/about.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ConsultationComponent } from './pages/consultation/consultation.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ConsultationComponent } from './pages/consultation/consultation.compone
     AccordionModule,
     BrowserAnimationsModule,
     CardModule,
+    TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

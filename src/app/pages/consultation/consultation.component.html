@@ -38,7 +38,34 @@
           </div>
           <img src="assets/icons/arrow-button-white.png" />
         </div>
+        <div class="content__right">
+          <div class="price__download-title">Полный прайс лист</div>
+          <a href="#" target="_blank" download
+            >Скачать<img src="assets/buttons/btn-download.svg" alt=""
+          /></a>
+          <img src="assets/icons/arrow-button-dark.png" />
+        </div>
       </div>
+      <p-table
+        [value]="price"
+        [tableStyle]="{ 'min-width': '50rem' }"
+        [paginator]="true"
+        [rows]="10"
+      >
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Название услуги</th>
+            <th>Цена</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-price>
+          <tr>
+            <td>{{ price.serviceName }}</td>
+            <td>{{ price.price }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
     </div>
+    <app-services></app-services>
   </div>
 </div>

@@ -3,6 +3,30 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
+.main__button {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px 12px 16px;
+  background: rgb(6, 153, 184);
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: rgb(21, 131, 153);
+  }
+}
+
 /*
 Prime NG OVerwritten
 */

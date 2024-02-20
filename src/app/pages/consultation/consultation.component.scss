@@ -1,0 +1,139 @@
+.consultant__wrapper {
+  width: 100%;
+  max-width: 1328px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.consultant {
+  width: 100%;
+  max-width: 1328px;
+  margin: 0 auto;
+}
+
+.consult__heading {
+  border-radius: 20px;
+  box-shadow: 0px 40px 79px 0px rgba(22, 47, 70, 0.08),
+    0px 1px 39px 0px rgba(22, 47, 70, 0.08);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.consult__content {
+  padding: 40px 56px 40px 56px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 728px;
+  gap: 30px;
+}
+
+.consult__title {
+  // Ваши стили для заголовка .consult__title
+}
+
+.consult__tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.tag__item {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 16px 10px 16px;
+  background: rgb(242, 243, 247);
+}
+
+.consult__img {
+  // Ваши стили для изображения .consult__img
+}
+
+.price__section {
+  // Ваши стили для секции с ценами .price__section
+}
+
+.price__title {
+  color: rgb(41, 44, 54);
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  & .title-dot {
+    background-color: rgb(6, 153, 184);
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+  }
+}
+
+.price__content {
+  // Ваши стили для контента секции с ценами .price__content
+}
+
+.content__left {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  color: rgb(41, 44, 54);
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  backdrop-filter: blur(3.1px);
+  background: rgb(244, 244, 244);
+}
+
+.price__tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.tag__item-blue {
+  // Ваши стили для элементов тегов цен .tag__item-blue
+}
+
+.content__right {
+  // Ваши стили для правой части контента .content__right
+}
+
+.price__download-title {
+  // Ваши стили для заголовка скачивания .price__download-title
+}
+
+.price__download-title a {
+  // Ваши стили для ссылки заголовка скачивания .price__download-title a
+}
+
+.price__download-title img {
+  // Ваши стили для изображения заголовка скачивания .price__download-title img
+}

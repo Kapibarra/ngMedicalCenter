@@ -1,0 +1,13 @@
+.router-animation {
+  transition: opacity 0.5s;
+}
+
+.router-animation.ng-enter,
+.router-animation.ng-leave {
+  opacity: 0;
+}
+
+.router-animation.ng-enter-active,
+.router-animation.ng-leave-active {
+  opacity: 1;
+}

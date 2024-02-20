@@ -12,12 +12,16 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
         label: 'Главная',
-        routerLink: '/home',
+        routerLink: '/',
       },
       {
         label: 'Услуги',
         icon: 'pi pi-fw pi-wallet',
         items: [
+          {
+            label: 'Консультация врачей',
+            routerLink: '/consultation',
+          },
           {
             label: 'Терапия и экспертиза временной недееспособности',
             routerLink: '/',
@@ -111,7 +115,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'О нас',
-        routerLink: '/',
+        routerLink: '/about',
       },
       {
         label: 'Контакты',

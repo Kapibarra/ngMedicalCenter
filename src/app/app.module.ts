@@ -18,6 +18,9 @@ import { InfoComponent } from './pages/main-page/components/info/info.component'
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardModule } from 'primeng/card';
+import { AboutComponent } from './pages/main-page/components/about/about.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ConsultationComponent } from './pages/consultation/consultation.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { CardModule } from 'primeng/card';
     ContactsPageComponent,
     ContactsComponent,
     InfoComponent,
+    AboutComponent,
+    AboutPageComponent,
+    ConsultationComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@
     <div class="price__section">
       <div class="price__title">
         <div class="title-dot"></div>
-        Стоимость консультации:
+        Условия консультации:
       </div>
       <div class="price__content">
         <div class="content__left">
@@ -36,7 +36,16 @@
               <img src="assets/icons/time.png" />от 900 рублей
             </div>
           </div>
-          <img src="assets/icons/arrow-button-white.png" />
+          <p>
+            В медицинском центре ведут прием врачи-специалисты:
+            акушер-гинеколог, дерматовенеролог, офтальмолог, профпатолог,
+            терапевт. Более того, мы предлагаем клиентам услуги по проведению
+            профилактических осмотров — получение медицинских справок, книжек,
+            санитарно-курортных карт, официальных больничных листов, а также
+            проведение диагностических и лабораторных исследований и
+            водительских комиссий.
+          </p>
+          <img src="assets/icons/arrow-button-white.png" class="arrow" />
         </div>
         <div class="content__right">
           <div class="price__download-title">Полный прайс лист</div>
@@ -46,25 +55,35 @@
           <img src="assets/icons/arrow-button-dark.png" />
         </div>
       </div>
-      <p-table
-        [value]="price"
-        [tableStyle]="{ 'min-width': '50rem' }"
-        [paginator]="true"
-        [rows]="10"
-      >
-        <ng-template pTemplate="header">
-          <tr>
-            <th>Название услуги</th>
-            <th>Цена</th>
-          </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-price>
-          <tr>
-            <td>{{ price.serviceName }}</td>
-            <td>{{ price.price }}</td>
-          </tr>
-        </ng-template>
-      </p-table>
+      <div class="price__title">
+        <div class="title-dot"></div>
+        Цены на услуги:
+      </div>
+      <div class="price__table">
+        <p-table
+          [value]="price"
+          [tableStyle]="{ 'min-width': '50rem' }"
+          [paginator]="true"
+          [rows]="10"
+        >
+          <ng-template pTemplate="header">
+            <tr>
+              <th pSortableColumn="serviceName">
+                Название услуги <p-sortIcon field="serviceName"></p-sortIcon>
+              </th>
+              <th>Цена</th>
+              <th>Длительность</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-price>
+            <tr>
+              <td>{{ price.serviceName }}</td>
+              <td>{{ price.price }}</td>
+              <td>{{ price.duration }}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
     </div>
     <app-services></app-services>
   </div>

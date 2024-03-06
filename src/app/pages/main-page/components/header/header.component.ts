@@ -15,79 +15,27 @@ export class HeaderComponent implements OnInit {
         routerLink: '/',
       },
       {
-        label: 'Услуги',
+        label: 'Профосмотры',
         icon: 'pi pi-fw pi-wallet',
         items: [
           {
             label: 'Консультация врачей',
             routerLink: '/consultation',
           },
-          {
-            label: 'Терапия и экспертиза временной недееспособности',
-            routerLink: '/',
-          },
-          {
-            label: 'Гинекология и ведение беременности',
-            routerLink: '/',
-          },
-          {
-            label: 'Функциональная диагностика',
-            routerLink: '/',
-          },
-          {
-            label: 'Ультразвуковые исследования',
-            routerLink: '/',
-          },
-          {
-            label: 'Рентгенология',
-            routerLink: '/',
-          },
-          {
-            label: 'Медицинские справки, выписки заключение',
-            routerLink: '/',
-          },
-          {
-            label: 'Профосмотры и личные медицинские книжки',
-            routerLink: '/',
-          },
-          {
-            label: 'Лабораторная диагностика',
-            routerLink: '/',
-          },
         ],
       },
       {
-        label: 'Анализы',
+        label: 'Медкнижки',
         icon: 'pi pi-fw pi-chart-bar',
         items: [
           {
             label: 'Общеклинические анализы',
             routerLink: '/',
           },
-          {
-            label: 'Биохимия крови',
-            routerLink: '/',
-          },
-          {
-            label: 'Гормоны',
-            routerLink: '/',
-          },
-          {
-            label: 'Онкомаркеры',
-            routerLink: '/',
-          },
-          {
-            label: 'Иммунологические исследования',
-            routerLink: '/',
-          },
-          {
-            label: 'Микробиологические анализы',
-            routerLink: '/',
-          },
         ],
       },
       {
-        label: 'Профосмотры и личные медицинские книжки',
+        label: 'Организациям',
         icon: 'pi pi-fw pi-user',
         items: [
           {
@@ -95,11 +43,11 @@ export class HeaderComponent implements OnInit {
             routerLink: '/',
           },
           {
-            label: 'Дополнительные профилактические исследования',
+            label: 'Психиатрическое освидетельствование',
             routerLink: '/',
           },
           {
-            label: 'Медицинские осмотры для учебы и работы',
+            label: 'Личные медицинские книжки',
             routerLink: '/',
           },
           {
@@ -110,8 +58,8 @@ export class HeaderComponent implements OnInit {
         ],
       },
       {
-        label: 'Организациям',
-        routerLink: '/',
+        label: 'Справки',
+        routerLink: '/certificates',
       },
       {
         label: 'О нас',

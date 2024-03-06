@@ -22,6 +22,7 @@ import { AboutComponent } from './pages/main-page/components/about/about.compone
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ConsultationComponent } from './pages/consultation/consultation.component';
 import { TableModule } from 'primeng/table';
+import { CertificateComponent } from './pages/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TableModule } from 'primeng/table';
     AboutComponent,
     AboutPageComponent,
     ConsultationComponent,
+    CertificateComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,26 @@
 <div class="footer__wrapper">
   <div class="footer__map">
-    <img src="assets/imgs/footer-map.png" />
+    <div style="position: relative; overflow: hidden">
+      <a
+        href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+        style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+        >Москва</a
+      ><a
+        href="https://yandex.ru/maps/213/moscow/house/simferopolskiy_bulvar_24k5/Z04YcAdiTkUCQFtvfXp1dnlkYA==/?indoorLevel=1&ll=37.602705%2C55.647575&utm_medium=mapframe&utm_source=maps&z=17"
+        style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+        >Симферопольский бульвар, 24к5 на карте Москвы, ближайшее метро
+        Севастопольская — Яндекс Карты</a
+      ><iframe
+        src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.602705%2C55.647575&mode=whatshere&whatshere%5Bpoint%5D=37.602705%2C55.647574&whatshere%5Bzoom%5D=17&z=17"
+        width="100%"
+        max-width="1600px"
+        margin="0 auto"
+        height="400"
+        frameborder="0"
+        allowfullscreen="true"
+        style="position: relative"
+      ></iframe>
+    </div>
   </div>
   <div class="footer">
     <div class="footer__logo"></div>
@@ -21,15 +41,34 @@
       <ul class="footer__nav">
         <ul class="footer__nav">
           <li>
-            <a href="" class="footer__nav-item">Общеклинический анализ</a>
+            <a [routerLink]="'/medical-checkup'" class="footer__nav-item"
+              >Водительская комиссия</a
+            >
           </li>
           <li>
-            <a href="" class="footer__nav-item">Биохимический анализ крови</a>
+            <a [routerLink]="'/medical-books'" class="footer__nav-item"
+              >Медицинские книжки</a
+            >
           </li>
-          <li><a href="" class="footer__nav-item">Гормональный анализ</a></li>
-          <li><a href="" class="footer__nav-item">Онкомаркеры</a></li>
           <li>
-            <a href="" class="footer__nav-item">Микробиологический анализ</a>
+            <a [routerLink]="'/prof-osmotr'" class="footer__nav-item"
+              >Профосмотры</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="'/certificates'" class="footer__nav-item"
+              >Справки, выписки</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="'/psychology'" class="footer__nav-item"
+              >Психиатрия</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="'/medical-clinic'" class="footer__nav-item"
+              >Медпункт</a
+            >
           </li>
         </ul>
       </ul>

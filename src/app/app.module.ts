@@ -23,10 +23,17 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ConsultationComponent } from './pages/consultation/consultation.component';
 import { TableModule } from 'primeng/table';
 import { CertificateComponent } from './pages/certificate/certificate.component';
+import { ProfOsmotrComponent } from './pages/prof-osmotr/prof-osmotr.component';
+import { MedicalBooksComponent } from './pages/medical-books/medical-books.component';
+import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup.component';
+import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MedicalBooksComponent,
+    MedicalCheckupComponent,
+    MedicalClinicComponent,
     MainPageComponent,
     HeaderComponent,
     HeroComponent,
@@ -41,6 +48,7 @@ import { CertificateComponent } from './pages/certificate/certificate.component'
     AboutPageComponent,
     ConsultationComponent,
     CertificateComponent,
+    ProfOsmotrComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,20 @@
-<div class="certificateant__wrapper">
-  <div class="certificateant">
-    <div class="certificate__heading">
-      <div class="certificate__content">
-        <h2 class="certificate__title">Медицинские справки</h2>
-        <div class="certificate__tags-wrapper">
-          <div class="tag__item">Доступ к гостайне</div>
-          <div class="tag__item">Для спорта</div>
-          <div class="tag__item">Для бассейна</div>
-          <div class="tag__item">Для учебы</div>
-          <div class="tag__item">Для госслужбы</div>
+<div class="medical__checkup__wrapper">
+  <div class="medical__checkup">
+    <div class="medical__checkup__heading">
+      <div class="medical__checkup__content">
+        <h2 class="medical__checkup__title">
+          Профилактический медицинский осмотр
+        </h2>
+        <div class="medical__checkup__tags-wrapper">
+          <div class="tag__item">Для физических лиц</div>
+          <div class="tag__item">Для юридических лиц</div>
+          <div class="tag__item">Предварительные осмотры</div>
+          <div class="tag__item">Переодические осмотры</div>
+          <div class="tag__item">Психиатрия</div>
         </div>
         <div class="main__button">Записаться на прием</div>
       </div>
-      <div class="certificate__img">
+      <div class="medical__checkup__img">
         <img src="assets/imgs/service-main.png" />
       </div>
     </div>
@@ -25,7 +27,7 @@
         <div class="content__left">
           <div class="price__tags-wrapper">
             <div class="tag__item-blue">
-              <img src="assets/icons/time.png" />от 15 минут
+              <img src="assets/icons/time.png" />от 1 дня
             </div>
             <div class="tag__item-blue">
               <img src="assets/icons/card.png" />Оплата картой через терминал
@@ -34,16 +36,15 @@
               <img src="assets/icons/cash.png" />Оплата наличными
             </div>
             <div class="tag__item-blue">
-              <img src="assets/icons/cash.png" />от 600 рублей
+              <img src="assets/icons/cash.png" />от 1500 рублей
             </div>
           </div>
           <p>
-            У нас быстро и в комфортных условиях можно: <br />
-            - Пройти врачебную комиссию для ГИБДД<br />
-            - Получить заключение врачей для справки 086-у<br />
-            - Пройти медосмотр для оформления справки в бассейн
+            Профилактический медицинский осмотр – это комплекс медицинских
+            обследований, проводимый в целях раннего (своевременного) выявления
+            состояний, заболеваний и факторов риска их развития, а также в целях
+            определения групп здоровья и выработки рекомендаций для пациентов.
           </p>
-          <img src="assets/icons/arrow-button-white.png" class="arrow" />
         </div>
         <div class="content__right">
           <div class="price__download-title">Полный прайс лист</div>
@@ -55,7 +56,7 @@
       </div>
       <div class="price__title">
         <div class="title-dot"></div>
-        Цены на услуги:
+        Цены на осмотры:
       </div>
       <div class="price__table">
         <p-table
@@ -67,17 +68,15 @@
           <ng-template pTemplate="header">
             <tr>
               <th pSortableColumn="serviceName">
-                Название услуги <p-sortIcon field="serviceName"></p-sortIcon>
+                Услуга: <p-sortIcon field="serviceName"></p-sortIcon>
               </th>
-              <th>Цена</th>
-              <th>Время действия</th>
+              <th>Цена:</th>
             </tr>
           </ng-template>
           <ng-template pTemplate="body" let-price>
             <tr>
               <td>{{ price.serviceName }}</td>
               <td>{{ price.price }}</td>
-              <td>{{ price.duration }}</td>
             </tr>
           </ng-template>
         </p-table>

@@ -35,7 +35,7 @@ export class CertificateComponent {
     {
       serviceName: 'Справки на спорт (без стоимости анализов) ',
       price: 1700,
-      duration: '6 месяца',
+      duration: '6 месяцев',
     },
   ];
 }

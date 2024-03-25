@@ -16,44 +16,33 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Профосмотры',
-        icon: 'pi pi-fw pi-wallet',
-        items: [
-          {
-            label: 'Консультация врачей',
-            routerLink: '/consultation',
-          },
-        ],
+        icon: 'pi pi-fw pi-user',
+        routerLink: '/prof-osmotr',
       },
       {
         label: 'Медкнижки',
-        icon: 'pi pi-fw pi-chart-bar',
-        items: [
-          {
-            label: 'Общеклинические анализы',
-            routerLink: '/',
-          },
-        ],
+        icon: 'pi pi-fw pi-book',
+        routerLink: '/medical-books',
       },
       {
         label: 'Организациям',
-        icon: 'pi pi-fw pi-user',
+        icon: 'pi pi-fw pi-users',
         items: [
           {
             label: 'Профилактический медицинский осмотр',
-            routerLink: '/',
+            routerLink: '/medical-checkup',
           },
           {
             label: 'Психиатрическое освидетельствование',
-            routerLink: '/',
+            routerLink: '/psychology',
           },
           {
             label: 'Личные медицинские книжки',
-            routerLink: '/',
+            routerLink: '/medical-books',
           },
           {
-            label:
-              'Медицинская справка для получения или замены водительского удостоверения',
-            routerLink: '/',
+            label: 'Организация медицинского пункта на предприятии',
+            routerLink: '/medical-clinic',
           },
         ],
       },
@@ -68,6 +57,7 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Контакты',
         routerLink: '/contacts',
+        icon: 'pi pi-fw pi-at',
       },
     ];
   }

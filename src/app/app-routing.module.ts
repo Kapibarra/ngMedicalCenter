@@ -5,6 +5,10 @@ import { ContactsPageComponent } from './pages/contacts-page/contacts-page.compo
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ConsultationComponent } from './pages/consultation/consultation.component';
 import { CertificateComponent } from './pages/certificate/certificate.component';
+import { ProfOsmotrComponent } from './pages/prof-osmotr/prof-osmotr.component';
+import { MedicalBooksComponent } from './pages/medical-books/medical-books.component';
+import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup.component';
+import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent }, // маршрут для главной страницы
@@ -12,6 +16,10 @@ const routes: Routes = [
   { path: 'about', component: AboutPageComponent }, // маршрут для страницы "О нас"
   { path: 'certificates', component: CertificateComponent }, // маршрут для страницы "Справки"
   { path: 'contacts', component: ContactsPageComponent }, // маршрут для страницы контактов
+  { path: 'prof-osmotr', component: ProfOsmotrComponent }, // маршрут для страницы проф осмотров
+  { path: 'medical-books', component: MedicalBooksComponent }, // маршрут для страницы медкнижек
+  { path: 'medical-checkup', component: MedicalCheckupComponent }, // маршрут для страницы медкнижек
+  { path: 'medical-clinic', component: MedicalClinicComponent }, // маршрут для страницы медкнижек
   // { path: '**', component:  } // маршрут для несуществующих страниц
 ];
 

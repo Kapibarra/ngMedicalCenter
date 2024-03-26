@@ -29,6 +29,18 @@ export class HeaderComponent implements OnInit {
         icon: 'pi pi-fw pi-users',
         items: [
           {
+            label: 'Телефон: 8(925) 741-00-03',
+            command: () => {
+              this.callNumber('+79257410003');
+            },
+          },
+          {
+            label: 'Телефон: 8(495) 542-60-17',
+            command: () => {
+              this.callNumber('+74955426017');
+            },
+          },
+          {
             label: 'Профилактический медицинский осмотр',
             routerLink: '/medical-checkup',
           },
@@ -63,4 +75,8 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  callNumber(phoneNumber: string) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
 }

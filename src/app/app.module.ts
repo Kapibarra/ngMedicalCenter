@@ -27,6 +27,7 @@ import { ProfOsmotrComponent } from './pages/prof-osmotr/prof-osmotr.component';
 import { MedicalBooksComponent } from './pages/medical-books/medical-books.component';
 import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup.component';
 import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
+import { PsychologyComponent } from './pages/psychology/psychology.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.co
     MedicalBooksComponent,
     MedicalCheckupComponent,
     MedicalClinicComponent,
+    PsychologyComponent,
     MainPageComponent,
     HeaderComponent,
     HeroComponent,

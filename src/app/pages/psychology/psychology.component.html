@@ -10,7 +10,9 @@
           <div class="tag__item">Работа с детьми</div>
           <div class="tag__item">Обращение с оружием</div>
         </div>
-        <div class="main__button">Записаться на прием</div>
+        <div class="main__button" routerLink="/contacts">
+          Записаться на прием
+        </div>
       </div>
       <div class="psychology__img">
         <img src="assets/imgs/service-main.png" />
@@ -49,15 +51,15 @@
         </div>
         <div class="content__right">
           <div class="price__download-title">Полный прайс лист</div>
-          <a href="#" target="_blank" download
-            >Скачать<img src="assets/buttons/btn-download.svg" alt=""
+          <a routerLink="/price" target="_blank"
+            >Смотреть<img src="assets/buttons/btn-download.svg" alt=""
           /></a>
           <img src="assets/icons/arrow-button-dark.png" />
         </div>
       </div>
       <div class="price__title">
         <div class="title-dot"></div>
-        Цены на осмотры:
+        Кому требуется психологическое освидетельствование:
       </div>
       <div class="price__table">
         <p-table
@@ -69,15 +71,14 @@
           <ng-template pTemplate="header">
             <tr>
               <th pSortableColumn="serviceName">
-                Услуга: <p-sortIcon field="serviceName"></p-sortIcon>
+                Категория Граждан:
+                <p-sortIcon field="serviceName"></p-sortIcon>
               </th>
-              <th>Цена:</th>
             </tr>
           </ng-template>
           <ng-template pTemplate="body" let-price>
             <tr>
               <td>{{ price.serviceName }}</td>
-              <td>{{ price.price }}</td>
             </tr>
           </ng-template>
         </p-table>

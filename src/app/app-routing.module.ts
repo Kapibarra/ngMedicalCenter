@@ -10,6 +10,7 @@ import { MedicalBooksComponent } from './pages/medical-books/medical-books.compo
 import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup.component';
 import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
 import { PsychologyComponent } from './pages/psychology/psychology.component';
+import { PricePageComponent } from './pages/price-page/price-page.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent }, // маршрут для главной страницы
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'medical-checkup', component: MedicalCheckupComponent }, // маршрут для страницы медосмотров
   { path: 'medical-clinic', component: MedicalClinicComponent }, // маршрут для страницы медпункта
   { path: 'psychology', component: PsychologyComponent }, // маршрут для страницы медкнижек
+  { path: 'price', component: PricePageComponent }, // маршрут для страницы прайс листа
   // { path: '**', component:  } // маршрут для несуществующих страниц
 ];
 

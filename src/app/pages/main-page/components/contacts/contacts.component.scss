@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1880px;
   border-radius: 20px;
+  margin: 0 auto;
 }
 
 .contacts {
@@ -14,7 +15,8 @@
   max-width: 1440px;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .contacts__info {

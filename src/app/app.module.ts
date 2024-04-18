@@ -28,6 +28,7 @@ import { MedicalBooksComponent } from './pages/medical-books/medical-books.compo
 import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup.component';
 import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
 import { PsychologyComponent } from './pages/psychology/psychology.component';
+import { PricePageComponent } from './pages/price-page/price-page.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { PsychologyComponent } from './pages/psychology/psychology.component';
     ConsultationComponent,
     CertificateComponent,
     ProfOsmotrComponent,
+    PricePageComponent,
   ],
   imports: [
     BrowserModule,

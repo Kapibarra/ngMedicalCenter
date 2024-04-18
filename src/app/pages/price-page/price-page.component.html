@@ -1,0 +1,100 @@
+<div class="price">
+  <div class="price__title">
+    <div class="title-dot"></div>
+    Прайслист услуг:
+  </div>
+  <div class="price__table">
+    <p-table [value]="price_1" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="serviceName">
+            Психологическое освидетельствование
+            <p-sortIcon field="serviceName"></p-sortIcon>
+          </th>
+          <th pSortableColumn="serviceName">Цена:</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-price_1>
+        <tr>
+          <td>{{ price_1.serviceName }}</td>
+          <td>{{ price_1.price }} руб.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+
+  <div class="price__table">
+    <p-table [value]="price_3" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="serviceName">
+            Профилактический медицинский осмотр
+            <p-sortIcon field="serviceName"></p-sortIcon>
+          </th>
+          <th>Цена:</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-price>
+        <tr>
+          <td>{{ price.serviceName }}</td>
+          <td>{{ price.price }} руб.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+
+  <div class="price__table">
+    <p-table [value]="price_4" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="serviceName">
+            Медицинские книжки<p-sortIcon field="serviceName"></p-sortIcon>
+          </th>
+          <th>Цена</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-price>
+        <tr>
+          <td>{{ price.serviceName }}</td>
+          <td>{{ price.price }} руб.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  <div class="price__table">
+    <p-table [value]="price_2" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="serviceName">
+            Проф осмотры <p-sortIcon field="serviceName"></p-sortIcon>
+          </th>
+          <th>Цена</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-price>
+        <tr>
+          <td>{{ price.serviceName }}</td>
+          <td>{{ price.price }} руб.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  <div class="price__table">
+    <p-table [value]="price_5" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="serviceName">
+            Медицинские справки <p-sortIcon field="serviceName"></p-sortIcon>
+          </th>
+          <th>Цена</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-price>
+        <tr>
+          <td>{{ price.serviceName }}</td>
+          <td>{{ price.price }} руб.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

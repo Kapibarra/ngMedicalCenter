@@ -11,6 +11,7 @@ import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup
 import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
 import { PsychologyComponent } from './pages/psychology/psychology.component';
 import { PricePageComponent } from './pages/price-page/price-page.component';
+import { TestsComponent } from './pages/tests/tests.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent }, // маршрут для главной страницы
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'medical-clinic', component: MedicalClinicComponent }, // маршрут для страницы медпункта
   { path: 'psychology', component: PsychologyComponent }, // маршрут для страницы медкнижек
   { path: 'price', component: PricePageComponent }, // маршрут для страницы прайс листа
+  { path: 'medical-tests', component: TestsComponent }, // маршрут для страницы анализов
   // { path: '**', component:  } // маршрут для несуществующих страниц
 ];
 

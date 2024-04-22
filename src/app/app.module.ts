@@ -29,6 +29,7 @@ import { MedicalCheckupComponent } from './pages/medical-checkup/medical-checkup
 import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.component';
 import { PsychologyComponent } from './pages/psychology/psychology.component';
 import { PricePageComponent } from './pages/price-page/price-page.component';
+import { TestsComponent } from './pages/tests/tests.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { PricePageComponent } from './pages/price-page/price-page.component';
     CertificateComponent,
     ProfOsmotrComponent,
     PricePageComponent,
+    TestsComponent,
   ],
   imports: [
     BrowserModule,

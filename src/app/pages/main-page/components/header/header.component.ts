@@ -63,6 +63,11 @@ export class HeaderComponent implements OnInit {
         routerLink: '/certificates',
       },
       {
+        label: 'Анализы',
+        icon: 'pi pi-fw pi-check-circle',
+        routerLink: '/medical-tests',
+      },
+      {
         label: 'О нас',
         routerLink: '/about',
       },

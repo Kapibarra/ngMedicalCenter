@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
             },
           },
           {
-            label: 'Профилактический медицинский осмотр',
+            label: 'Предварительный/Периодический медицинский осмотр',
             routerLink: '/medical-checkup',
           },
           {

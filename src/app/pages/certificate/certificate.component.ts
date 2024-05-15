@@ -34,7 +34,7 @@ export class CertificateComponent {
     },
     {
       serviceName: 'Справки 001-ГСУ/У для госслужбы',
-      price: 1800,
+      price: 1500,
       duration: '-',
     },
     {
@@ -44,12 +44,12 @@ export class CertificateComponent {
     },
     {
       serviceName: 'Санаторно курортная карта 072-у',
-      price: 1600,
+      price: 2000,
       duration: '-',
     },
     {
       serviceName: 'Справки на спорт (без стоимости анализов) ',
-      price: 1700,
+      price: 1000,
       duration: '6 месяцев',
     },
   ];

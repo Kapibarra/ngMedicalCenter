@@ -123,3 +123,26 @@
     }
   }
 }
+.info__title {
+  color: rgb(41, 44, 54);
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  & .title-dot {
+    background-color: rgb(6, 153, 184);
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+  }
+}

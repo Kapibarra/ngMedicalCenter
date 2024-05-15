@@ -33,8 +33,8 @@
               <img src="assets/icons/cash.png" />Оплата наличными
             </div>
             <!-- <div class="tag__item-blue">
-              <img src="assets/icons/cash.png" />от 600 рублей
-            </div> -->
+                <img src="assets/icons/cash.png" />от 600 рублей
+              </div> -->
           </div>
           <p>
             Мы проводим профосмотры для работников предприятий Москвы и области.
@@ -56,30 +56,30 @@
         <div class="title-dot"></div>
         Цены на услуги:
       </div>
-      <div class="price__table">
-        <p-table
-          [value]="price"
-          [tableStyle]="{ 'min-width': '50rem' }"
-          [paginator]="true"
-          [rows]="10"
-        >
-          <ng-template pTemplate="header">
-            <tr>
-              <th pSortableColumn="serviceName">
-                Проведение периодического и предварительного медицинского
-                осмотра <p-sortIcon field="serviceName"></p-sortIcon>
-              </th>
-              <th>Цена</th>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-price>
-            <tr>
-              <td>{{ price.serviceName }}</td>
-              <td>{{ price.price }}</td>
-            </tr>
-          </ng-template>
-        </p-table>
-      </div>
+      <!-- <div class="price__table">
+          <p-table
+            [value]="price"
+            [tableStyle]="{ 'min-width': '50rem' }"
+            [paginator]="true"
+            [rows]="10"
+          >
+            <ng-template pTemplate="header">
+              <tr>
+                <th pSortableColumn="serviceName">
+                  Проведение периодического и предварительного медицинского
+                  осмотра <p-sortIcon field="serviceName"></p-sortIcon>
+                </th>
+                <th>Цена</th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-price>
+              <tr>
+                <td>{{ price.serviceName }}</td>
+                <td>{{ price.price }}</td>
+              </tr>
+            </ng-template>
+          </p-table>
+        </div> -->
     </div>
     <app-contacts-mini></app-contacts-mini>
     <app-services></app-services>

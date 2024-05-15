@@ -79,20 +79,23 @@
               <th pSortableColumn="serviceName">
                 Название услуги <p-sortIcon field="serviceName"></p-sortIcon>
               </th>
-              <th>Цена</th>
-              <th>Действие</th>
+              <th>Оформление новой Мед.Книжки</th>
+              <th>Продление с аттестацией</th>
+              <th>Продление без аттестации</th>
             </tr>
           </ng-template>
           <ng-template pTemplate="body" let-price>
             <tr>
               <td>{{ price.serviceName }}</td>
               <td>{{ price.price }}</td>
-              <td>{{ price.duration }}</td>
+              <td>{{ price.price2 }}</td>
+              <td>{{ price.price3 }}</td>
             </tr>
           </ng-template>
         </p-table>
       </div>
     </div>
+    <app-contacts-mini></app-contacts-mini>
     <app-services></app-services>
   </div>
 </div>

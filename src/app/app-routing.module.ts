@@ -12,6 +12,7 @@ import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.co
 import { PsychologyComponent } from './pages/psychology/psychology.component';
 import { PricePageComponent } from './pages/price-page/price-page.component';
 import { TestsComponent } from './pages/tests/tests.component';
+import { ProfOsmotrOrgComponent } from './pages/prof-osmotr-org/prof-osmotr-org.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent }, // маршрут для главной страницы
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'certificates', component: CertificateComponent }, // маршрут для страницы "Справки"
   { path: 'contacts', component: ContactsPageComponent }, // маршрут для страницы контактов
   { path: 'prof-osmotr', component: ProfOsmotrComponent }, // маршрут для страницы проф осмотров
+  { path: 'prof-osmotr-org', component: ProfOsmotrOrgComponent }, // маршрут для страницы проф осмотров юр лица
   { path: 'medical-books', component: MedicalBooksComponent }, // маршрут для страницы медкнижек
   { path: 'medical-checkup', component: MedicalCheckupComponent }, // маршрут для страницы медосмотров
   { path: 'medical-clinic', component: MedicalClinicComponent }, // маршрут для страницы медпункта

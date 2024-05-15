@@ -30,6 +30,8 @@ import { MedicalClinicComponent } from './pages/medical-clinic/medical-clinic.co
 import { PsychologyComponent } from './pages/psychology/psychology.component';
 import { PricePageComponent } from './pages/price-page/price-page.component';
 import { TestsComponent } from './pages/tests/tests.component';
+import { ProfOsmotrOrgComponent } from './pages/prof-osmotr-org/prof-osmotr-org.component';
+import { ContactsMiniComponent } from './pages/main-page/components/contacts-mini/contacts-mini.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { TestsComponent } from './pages/tests/tests.component';
     ProfOsmotrComponent,
     PricePageComponent,
     TestsComponent,
+    ProfOsmotrOrgComponent,
+    ContactsMiniComponent,
   ],
   imports: [
     BrowserModule,

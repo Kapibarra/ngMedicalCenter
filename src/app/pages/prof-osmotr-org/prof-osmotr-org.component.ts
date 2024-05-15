@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-prof-osmotr',
-  templateUrl: './prof-osmotr.component.html',
-  styleUrl: './prof-osmotr.component.scss',
+  selector: 'app-prof-osmotr-org',
+  templateUrl: './prof-osmotr-org.component.html',
+  styleUrl: './prof-osmotr-org.component.scss',
 })
-export class ProfOsmotrComponent {
+export class ProfOsmotrOrgComponent {
   price = [
     {
       serviceName: ' Медицинский осмотр - мужчина',

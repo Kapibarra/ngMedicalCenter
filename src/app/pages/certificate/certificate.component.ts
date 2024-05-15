@@ -8,8 +8,23 @@ import { Component } from '@angular/core';
 export class CertificateComponent {
   price = [
     {
+      serviceName: 'Справка для ГИБДД',
+      price: 1000,
+      duration: '-',
+    },
+    {
       serviceName: 'Для работы, учебы 086-у',
       price: 1500,
+      duration: '-',
+    },
+    {
+      serviceName: 'Справка в бассейн',
+      price: 500,
+      duration: '-',
+    },
+    {
+      serviceName: 'Справка в бассейн с анализами',
+      price: 1000,
       duration: '-',
     },
     {

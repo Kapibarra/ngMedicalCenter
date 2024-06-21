@@ -71,7 +71,7 @@ import { MetrikaModule } from 'ng-yandex-metrika';
     TableModule,
     MetrikaModule.forRoot([
       {
-        id: 12345678, // Замените на ваш идентификатор счётчика
+        id: 97627618, // Замените на ваш идентификатор счётчика
         webvisor: true, // Включение вебвизора (по желанию)
         clickmap: true, // Включение карты кликов (по желанию)
         trackLinks: true, // Отслеживание ссылок (по желанию)

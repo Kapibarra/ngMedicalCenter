@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Metrika } from 'ng-yandex-metrika';
 import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 @Component({
@@ -8,7 +9,7 @@ import { MenubarModule } from 'primeng/menubar';
 })
 export class HeaderComponent implements OnInit {
   items: MenuItem[];
-  constructor() {
+  constructor(private metrika: Metrika) {
     this.items = [
       {
         label: 'Главная',
@@ -18,11 +19,17 @@ export class HeaderComponent implements OnInit {
         label: 'Профосмотры',
         icon: 'pi pi-fw pi-user',
         routerLink: '/prof-osmotr',
+        command: () => {
+          this.onClickProf();
+        },
       },
       {
         label: 'Медкнижки',
         icon: 'pi pi-fw pi-book',
         routerLink: '/medical-books',
+        command: () => {
+          this.onClickBooks();
+        },
       },
       {
         label: 'Организациям',
@@ -32,25 +39,36 @@ export class HeaderComponent implements OnInit {
             label: 'Телефон: 8(925) 741-00-03',
             command: () => {
               this.callNumber('+79257410003');
+              this.onClickPhone();
             },
           },
           {
             label: 'Телефон: 8(495) 542-60-17',
             command: () => {
               this.callNumber('+74955426017');
+              this.onClickPhone();
             },
           },
           {
             label: 'Предварительный/Периодический медицинский осмотр',
             routerLink: '/medical-checkup',
+            command: () => {
+              this.onClickProfOrg();
+            },
           },
           {
             label: 'Психиатрическое освидетельствование',
             routerLink: '/psychology',
+            command: () => {
+              this.onClickProfPsy();
+            },
           },
           {
             label: 'Личные медицинские книжки',
             routerLink: '/medical-books',
+            command: () => {
+              this.onClickBooksOrg();
+            },
           },
           {
             label: 'Организация медицинского пункта на предприятии',
@@ -61,11 +79,17 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Справки',
         routerLink: '/certificates',
+        command: () => {
+          this.onClickCert();
+        },
       },
       {
         label: 'Анализы',
         icon: 'pi pi-fw pi-check-circle',
         routerLink: '/medical-tests',
+        command: () => {
+          this.onClickTests();
+        },
       },
       {
         label: 'О нас',
@@ -75,6 +99,9 @@ export class HeaderComponent implements OnInit {
         label: 'Контакты',
         routerLink: '/contacts',
         icon: 'pi pi-fw pi-at',
+        command: () => {
+          this.onClickContacts();
+        },
       },
     ];
   }
@@ -83,5 +110,33 @@ export class HeaderComponent implements OnInit {
 
   callNumber(phoneNumber: string) {
     window.location.href = 'tel:' + phoneNumber;
+  }
+  onClickProf() {
+    this.metrika.reachGoal('profosmotr');
+    console.log('prof.metrika');
+  }
+  onClickBooks() {
+    this.metrika.reachGoal('books');
+  }
+  onClickTests() {
+    this.metrika.reachGoal('tests');
+  }
+  onClickCert() {
+    this.metrika.reachGoal('certificates');
+  }
+  onClickPhone() {
+    this.metrika.reachGoal('phone');
+  }
+  onClickProfOrg() {
+    this.metrika.reachGoal('profosmotrorg');
+  }
+  onClickProfPsy() {
+    this.metrika.reachGoal('psy');
+  }
+  onClickBooksOrg() {
+    this.metrika.reachGoal('books');
+  }
+  onClickContacts() {
+    this.metrika.reachGoal('contacts');
   }
 }

@@ -14,6 +14,9 @@
     .header__logo img {
       height: 80;
       display: block;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .header__address-wrapper {

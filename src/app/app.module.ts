@@ -32,7 +32,7 @@ import { PricePageComponent } from './pages/price-page/price-page.component';
 import { TestsComponent } from './pages/tests/tests.component';
 import { ProfOsmotrOrgComponent } from './pages/prof-osmotr-org/prof-osmotr-org.component';
 import { ContactsMiniComponent } from './pages/main-page/components/contacts-mini/contacts-mini.component';
-
+import { MetrikaModule } from 'ng-yandex-metrika';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +69,15 @@ import { ContactsMiniComponent } from './pages/main-page/components/contacts-min
     BrowserAnimationsModule,
     CardModule,
     TableModule,
+    MetrikaModule.forRoot([
+      {
+        id: 12345678, // Замените на ваш идентификатор счётчика
+        webvisor: true, // Включение вебвизора (по желанию)
+        clickmap: true, // Включение карты кликов (по желанию)
+        trackLinks: true, // Отслеживание ссылок (по желанию)
+        accurateTrackBounce: true, // Точное отслеживание отказов (по желанию)
+      },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],

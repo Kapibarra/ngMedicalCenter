@@ -46,3 +46,13 @@ Prime NG OVerwritten
 .p-menubar-root-list > .p-menuitem-active > p-menubarsub > .p-submenu-list {
   width: 320px !important;
 }
+@media screen and (max-width: 428px) {
+  .p-menubar .p-menubar-root-list {
+    position: absolute;
+    padding: 0.5rem 0;
+    background: #ffffff;
+    border: 0 none;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    width: 365px;
+  }
+}

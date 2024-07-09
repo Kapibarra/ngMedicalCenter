@@ -61,6 +61,9 @@
     & .benefits__row-1 {
       display: flex;
       gap: 30px;
+      @media screen and (max-width: 428px) {
+        flex-direction: column;
+      }
       & .benefits__item {
         flex: 1;
         & .benefits__item-title {
@@ -90,6 +93,10 @@
     & .benefits__row-2 {
       display: flex;
       gap: 30px;
+      @media screen and (max-width: 428px) {
+        flex-direction: column;
+        margin-top: 30px;
+      }
       & .benefits__item {
         flex: 1;
         & .benefits__item-title {

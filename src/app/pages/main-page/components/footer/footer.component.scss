@@ -23,6 +23,10 @@
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 30px;
+  @media screen and (max-width: 428px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__logo {
@@ -39,6 +43,9 @@
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  @media screen and (max-width: 428px) {
+    text-align: center;
+  }
 }
 
 .footer__nav ul {
@@ -55,6 +62,19 @@
   letter-spacing: 0%;
   text-align: left;
   text-decoration: none;
+  @media screen and (max-width: 428px) {
+    text-align: center;
+  }
+}
+.footer__nav ul li {
+  @media screen and (max-width: 428px) {
+    text-align: center;
+  }
+}
+.footer__nav li {
+  @media screen and (max-width: 428px) {
+    text-align: center;
+  }
 }
 
 .footer__popular-services {

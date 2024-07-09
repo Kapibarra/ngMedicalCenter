@@ -11,6 +11,12 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 428px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 10px;
+    }
     .header__logo img {
       height: 80;
       display: block;

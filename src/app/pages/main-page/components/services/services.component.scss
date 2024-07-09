@@ -21,6 +21,11 @@
       max-width: 410px;
       box-shadow: none;
       transition: all 0.3s ease-in-out;
+      & img {
+        @media screen and (max-width: 428px) {
+          max-width: 320px;
+        }
+      }
       &:hover {
         transition: all 0.3s ease-in-out;
         box-shadow: 0 0 10px 0 rgba(85, 85, 85, 0.1),
